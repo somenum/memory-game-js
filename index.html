@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Memory game</title>
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div id="modal-container" class="modal-container">
+      <div id="start-modal" class="modal">
+        <h2>Memory Game</h2>
+        <p>Click the "Start Game" button to begin!</p>
+        <button id="start-btn">Start Game</button>
+      </div>
+
+      <div id="end-modal" class="modal">
+        <h2 id="end-message"></h2>
+        <button id="replay-btn">Play Again</button>
+      </div>
+    </div>
+
+    <div id="game-container">
+      <h2 id="timer">Time Left: <span id="time-left">0</span> seconds</div>
+      <div id="game-grid"></div>
+    </div>
+
+    <script src="anime.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
